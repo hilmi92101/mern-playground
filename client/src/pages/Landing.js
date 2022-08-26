@@ -1,13 +1,15 @@
-import logo from '../assets/images/logo.svg'
 import main from '../assets/images/main.svg'
 
 // Styled Components
 import Wrapper from '../assets/wrappers/LandingPage'
 
+// Components
+import { Logo } from '../components'
+
 const Landing = () => {
     return <Wrapper>
         <nav>
-            <img src={logo} alt="jobify" className="logo"/>
+            <Logo></Logo>
         </nav>
         <div className="container page">
             <div className="info">
@@ -26,6 +28,5 @@ const Landing = () => {
         </div>
     </Wrapper>
 }
-
 
 export default Landing
